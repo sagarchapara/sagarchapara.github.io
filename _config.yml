@@ -1,20 +1,24 @@
 title: "Sagar Chapara — Machine Learning Blog"
 description: "Insights and notes on machine learning, deep learning, and applied AI."
+repository: "sagarchapara/sagarchapara.github.io"
 url: "https://sagarchapara.github.io"
 baseurl: ""
+timezone: "Asia/Kolkata"
+locale: "en-US"
 author:
   name: "Sagar Chapara"
+  avatar: "/assets/images/avatar.svg"
   bio: "Machine learning engineer exploring theory, practice, and everything in between."
-  location: ""
+  location: "Hyderabad, India"
+  email: "sagar@example.com"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/sagarchapara"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/sagarchapara/"
 
 permalink: /:categories/:title/
+logo: "/assets/images/logo.svg"
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -30,6 +34,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-paginate
+minimal_mistakes_skin: hacker
+
+github:
+  username: sagarchapara
+
+google_analytics: 
+
 defaults:
   - scope:
       path: ""
@@ -38,12 +49,14 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       related: true
       comments: false
       mathjax: true
       toc: true
       toc_sticky: true
+      sidebar:
+        nav: "main"
   - scope:
       path: ""
       type: pages
@@ -52,9 +65,14 @@ defaults:
       author_profile: true
       mathjax: true
       toc: false
+      sidebar:
+        nav: "main"
 collections:
   featured:
     output: true
+  research:
+    output: true
+    permalink: /research/:path/
 
 paginate: 6
 paginate_path: /blog/page:num/
@@ -64,6 +82,7 @@ search_provider: lunr
 
 include:
   - _pages
+  - _research
 
 sass:
   style: compressed
@@ -77,12 +96,3 @@ footer:
 mathjax:
   enable: true
   provider: mathjax
-
-# Navigation
-main:
-  - title: "Blog"
-    url: /blog/
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/

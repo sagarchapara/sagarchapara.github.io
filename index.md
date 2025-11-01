@@ -14,4 +14,11 @@ excerpt: "Thoughtful essays, experiment logs, and tutorials on modern machine le
 Welcome to my machine learning lab notebook and writing corner. I publish deep dives into the math, code walkthroughs, and opinion pieces on how we can deploy ML responsibly.
 </div>
 
-You can browse the latest posts below or jump into curated collections via the navigation bar.
+You can browse the latest posts below or jump straight into one of these sections:
+
+<div class="home-quick-links">
+  <a class="btn btn--inverse" href="/blog/">📚 Blog</a>
+  <a class="btn btn--inverse" href="/about/">👋 About</a>
+  <a class="btn btn--inverse" href="/projects/">🛠️ Projects</a>
+  <a class="btn btn--inverse" href="/research/">🧪 Research Notes</a>
+</div>

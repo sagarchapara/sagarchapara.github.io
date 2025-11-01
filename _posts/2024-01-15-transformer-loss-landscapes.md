@@ -7,6 +7,7 @@ tags:
   - optimization
   - visualization
 excerpt: "What the curvature of a transformer loss surface can tell us about convergence and generalization."
+mathjax: true
 ---
 
 Understanding how transformers traverse their loss landscape is critical for designing stable training schedules. In this note we derive the local quadratic approximation around a parameter snapshot and discuss how to interpret the resulting geometry.

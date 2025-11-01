@@ -1,10 +1,17 @@
 ---
 ---
 
-@import "minimal-mistakes/skins/air";
+@import "minimal-mistakes/skins/hacker";
 @import "minimal-mistakes";
 
 // Custom overrides
 .home-intro {
   font-size: 1.125rem;
+}
+
+.home-quick-links {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  flex-wrap: wrap;
 }
