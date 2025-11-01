@@ -1,3 +1,10 @@
+{% assign math_enabled = false %}
+{% if page.mathjax %}
+  {% assign math_enabled = true %}
+{% elsif page.layout == "post" and site.mathjax.enable %}
+  {% assign math_enabled = true %}
+{% endif %}
+{% if math_enabled %}
 <script>
   window.MathJax = {
     tex: {
@@ -12,3 +19,4 @@
   };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
