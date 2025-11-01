@@ -1,0 +1,78 @@
+title: "Sagar Chapara — Machine Learning Blog"
+description: "Insights and notes on machine learning, deep learning, and applied AI."
+url: "https://sagarchapara.github.io"
+baseurl: ""
+author:
+  name: "Sagar Chapara"
+  bio: "Machine learning engineer exploring theory, practice, and everything in between."
+  location: ""
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/sagarchapara"
+
+permalink: /:categories/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
+minimal_mistakes_skin: dark
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+      comments: false
+      mathjax: true
+      toc: true
+      toc_sticky: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      mathjax: true
+      toc: false
+collections:
+  featured:
+    output: true
+
+paginate: 6
+paginate_path: /blog/page:num/
+search: true
+search_full_content: true
+search_provider: lunr
+
+include:
+  - _pages
+
+sass:
+  style: compressed
+
+footer:
+  links:
+    - label: "RSS"
+      icon: "fas fa-rss"
+      url: "/feed.xml"
+
+mathjax:
+  enable: true
+  provider: mathjax
