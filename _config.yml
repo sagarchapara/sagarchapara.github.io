@@ -34,7 +34,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-paginate
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: hacker
 
 github:
   username: sagarchapara
