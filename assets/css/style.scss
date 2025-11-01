@@ -37,13 +37,15 @@
   padding: 0;
 }
 
-.post-list li {
+.post-list li,
+.post-list-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.post-list li:last-child {
+.post-list li:last-child,
+.post-list-item:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -56,6 +58,10 @@
   margin-bottom: 0.4rem;
 }
 
+.post-meta-authors {
+  margin-bottom: 0.75rem;
+}
+
 .post-link {
   color: inherit;
   text-decoration: none;
@@ -64,4 +70,54 @@
 .post-link:hover,
 .post-link:focus {
   text-decoration: underline;
+}
+
+.post {
+  margin: 0 auto 3rem;
+  max-width: 720px;
+}
+
+.post-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin: 0 0 0.5rem;
+}
+
+.post-meta .post-date {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.post-byline {
+  margin-left: 0.5rem;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-content h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-top: 2.5rem;
+}
+
+.post-content pre {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.MathJax,
+.katex-display {
+  overflow-x: auto;
+  padding: 0.5rem 0;
 }

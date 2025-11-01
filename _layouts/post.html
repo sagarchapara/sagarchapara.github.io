@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      {% assign author_names = "" %}
+      {% if page.authors %}
+        {% assign author_names = page.authors | array_to_sentence_string %}
+      {% elsif page.author and page.author.name %}
+        {% assign author_names = page.author.name %}
+      {% elsif page.author %}
+        {% assign author_names = page.author %}
+      {% elsif site.author and site.author.name %}
+        {% assign author_names = site.author.name %}
+      {% endif %}
+      {% if author_names != "" %}
+        <span class="post-byline">• {{ author_names | escape }}</span>
+      {% endif %}
+    </p>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
