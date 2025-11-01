@@ -1,9 +1,11 @@
 ---
+layout: default
 permalink: /about/
 title: "About"
 ---
 
-I am a machine learning engineer and researcher focused on building reliable, production-ready ML systems. This blog chronicles the models I build, the experiments that worked (and those that did not), and the principles that guide my practice.
+I am a machine learning engineer and researcher focused on building reliable, production-ready ML systems. This blog chronicles
+the models I build, the experiments that worked (and those that did not), and the principles that guide my practice.
 
 Expect to see:
 

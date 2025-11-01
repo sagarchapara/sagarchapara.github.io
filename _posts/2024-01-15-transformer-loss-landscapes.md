@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Visualizing Transformer Loss Landscapes"
 categories:
   - research

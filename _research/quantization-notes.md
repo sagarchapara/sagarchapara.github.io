@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Efficient Transformer Quantization Notes"
 excerpt: "Quick references for activation-aware quantization experiments."
 permalink: /research/quantization-notes/
