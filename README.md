@@ -13,6 +13,8 @@ bundle exec jekyll serve
 
 Open `http://127.0.0.1:4000` in your browser to preview the site.
 
+> **Tip:** If `jekyll serve` complains about a missing `webrick`, run `bundle add webrick` once or keep the dependency pinned in `Gemfile` (already configured here).
+
 If you prefer to keep dependencies isolated, configure Bundler to install gems inside `vendor/bundle`:
 
 ```bash
@@ -20,6 +22,12 @@ bundle config set --local path 'vendor/bundle'
 ```
 
 After the initial install you only need to run `bundle exec jekyll serve` to boot the local server.
+
+If you want to generate the static site without starting the server, run:
+
+```bash
+bundle exec jekyll build
+```
 
 ## Features
 
