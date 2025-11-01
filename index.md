@@ -20,4 +20,5 @@ You can browse the latest posts below or jump straight into one of these section
   <a class="btn btn--inverse" href="/blog/">📚 Blog</a>
   <a class="btn btn--inverse" href="/about/">👋 About</a>
   <a class="btn btn--inverse" href="/projects/">🛠️ Projects</a>
+  <a class="btn btn--inverse" href="/research/">🧪 Research Notes</a>
 </div>
