@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: /blog/
 title: "Blog"
 excerpt: "Latest research notes, experiments, and tutorials."

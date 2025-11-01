@@ -55,7 +55,7 @@ defaults:
   - scope:
       path: "_pages"
     values:
-      layout: default
+      layout: page
   - scope:
       path: ""
       type: research
